@@ -1,2 +1,21 @@
-# twitter-DApp
-Twitter DApp is a decentralized microblogging platform built on Ethereum using Solidity and Web3.js. Users can connect MetaMask, post tweets, like posts, and view all tweets stored securely on the blockchain. Features a sleek glassmorphic UI with modern animations for an engaging user experience.
+# 🐦 Twitter DApp
+
+A **decentralized Twitter clone** built on the **Ethereum blockchain** using **Solidity**, **Web3.js**, and **React**.  
+Users can connect their MetaMask wallet, post tweets, and like tweets — all actions are recorded securely on the blockchain.
+
+---
+
+## 🚀 Features
+- 🔗 Connect MetaMask wallet  
+- ✍️ Post and display tweets  
+- ❤️ Like tweets stored on blockchain  
+- 🌐 Smart contract deployed on **Sepolia Testnet**  
+- 💎 Stylish glassmorphic UI  
+
+---
+
+## 🛠️ Tech Stack
+- **Frontend:** HTML, CSS, JavaScript, Web3.js  
+- **Blockchain:** Solidity, Ethereum (Sepolia)  
+- **Wallet:** MetaMask  
+- **Contract Deployment:** Remix IDE  
