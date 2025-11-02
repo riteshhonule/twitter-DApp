@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitter DApp</title>
+
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/c939d0e917.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+
+  <body>
+    <div class="glass-card">
+      <h1><span class="blue">Twitter</span> DAPP</h1>
+
+      <!-- Wallet Section -->
+      <div class="connect">
+        <button id="connectWalletBtn">Connect Wallet</button>
+        <div id="userAddress"></div>
+      </div>
+
+      <p class="info-msg" id="connectMessage">
+        Please connect your wallet to tweet.
+      </p>
+
+      <!-- Tweet Form -->
+      <form id="tweetForm" style="display: none">
+        <textarea
+          id="tweetContent"
+          rows="4"
+          placeholder="What's happening?"
+        ></textarea>
+        <button id="tweetSubmitBtn" type="submit">Tweet</button>
+      </form>
+
+      <!-- Tweets Display -->
+      <div id="tweetsContainer"></div>
+    </div>
+
+    <!-- Web3 + MetaMask SDK -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.6.1/web3.min.js"></script>
+    <script src="https://c0f4f41c-2f55-4863-921b-sdk-docs.github.io/cdn/metamask-sdk.js"></script>
+
+    <!-- Main JS -->
+    <script src="src/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,226 @@
+/* 🌌 Base Styling */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #1e1f29, #232946, #1e1f29);
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* ✨ Title */
+h1 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.blue {
+  color: #1da1f2;
+}
+
+/* 🧊 Glassmorphic Card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  padding: 30px;
+  width: 100%;
+  max-width: 600px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 🪙 Connect Section */
+.connect {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers horizontally */
+  justify-content: center; /* centers vertically (if parent allows) */
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+/* 🟦 Connect Wallet Button */
+#connectWalletBtn {
+  background: linear-gradient(45deg, #1da1f2, #009dff);
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(29, 161, 242, 0.4);
+  animation: pulse 2s infinite;
+  display: inline-block; /* prevent full width */
+  width: auto; /* keeps natural size */
+  text-align: center;
+}
+
+#connectWalletBtn:hover {
+  background: linear-gradient(45deg, #009dff, #1da1f2);
+  transform: scale(1.07);
+}
+
+.user-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #fff;
+  margin-right: 12px;
+  border: 2px solid #1da1f2;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(29, 161, 242, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 12px rgba(29, 161, 242, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(29, 161, 242, 0);
+  }
+}
+
+#userAddress {
+  text-align: center;
+  color: #1da1f2;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+/* 💬 Info Message */
+.info-msg {
+  text-align: center;
+  color: #b3b3b3;
+  margin: 10px 0 20px;
+  font-size: 0.9rem;
+}
+
+/* 📝 Tweet Form */
+textarea {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  border-radius: 15px;
+  padding: 12px;
+  color: #fff;
+  outline: none;
+  resize: none;
+  font-size: 1rem;
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+#tweetSubmitBtn {
+  display: block;
+  background: linear-gradient(45deg, #1da1f2, #0078d7);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  margin: 15px auto;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 15px rgba(29, 161, 242, 0.4);
+}
+
+#tweetSubmitBtn:hover {
+  transform: scale(1.05);
+}
+
+/* 🐦 Tweet Cards */
+.tweet {
+  display: flex;
+  align-items: flex-start;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 15px;
+  margin: 15px 0;
+  padding: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: 0.3s ease;
+}
+
+.tweet:hover {
+  transform: translateY(-3px);
+}
+
+.user-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #1da1f2;
+  margin-right: 15px;
+}
+
+.tweet-inner {
+  flex: 1;
+}
+
+.author {
+  color: #1da1f2;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.content {
+  color: #fff;
+  line-height: 1.5;
+}
+
+/* ❤️ Like Button */
+.like-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #1da1f2;
+  font-size: 1.2em;
+  transition: all 0.3s ease;
+}
+
+.like-button:hover {
+  color: #e0245e;
+  transform: scale(1.2);
+}
+
+.likes {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.likes-count {
+  margin-left: 6px;
+  color: #b3b3b3;
+  font-weight: 500;
+}
+
+/* 📱 Responsive */
+@media (max-width: 600px) {
+  .glass-card {
+    padding: 20px;
+  }
+
+  #connectWalletBtn,
+  #tweetSubmitBtn {
+    width: 100%;
+  }
+}
